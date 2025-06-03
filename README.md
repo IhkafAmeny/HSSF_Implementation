@@ -16,15 +16,6 @@ To adapt with ABIDE dataset and implement the **HSSF** approach for :
 3. **Regularity Fusion (RF)** – clients distill knowledge from the server via KL divergence  
 4. **Semi-Supervised Learning (SSL)** – clients apply SA (Self-Assessment) and RPG (Reliable Pseudo-label Generation) on their own unlabeled data
 
-
-##  Project Structure
- ├── dataset/
-│├── image/ # Folder containing PNG images
-│ └── phenotypes_clean1.csv # CSV file with columns: subject_id, diagnosis
-├── hssf_abide # Main federated training script implementing HSSF
-├── models # CNN architecture definitions (ResNet, EfficientNet, etc.)
-├── utils # Utility functions (pseudo-labeling, evaluation, etc.)
-
 ## Dataset
 - MRI images come from the ABIDE Preprocessed dataset converted to .png format.
 - The file phenotypes_clean1.csv contains labels (autism or control) and subject IDs.
